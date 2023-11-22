@@ -1,2 +1,2 @@
 # angularTimer
-Angular Timer
+Angular Timer Experiment
