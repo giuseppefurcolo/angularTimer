@@ -1,4 +1,5 @@
-////Giuseppe Furcolo January 29, 2016. New York.
+////Giuseppe Furcolo. Originally done on January 29, 2016 in New York.
+
 /////////////////////////////SIZE&PLACING
 function size() {
 	var limit = 1500;
@@ -374,15 +375,10 @@ value8[7] = 0;
 value8[8] = 0;
 value8[9] = 360/9;
 
-
-
-
 function begin(){
 	startTimer();
 	dotterTimer();
 }
-
-
 	
 function startTimer() {
 	size();
@@ -393,7 +389,6 @@ function dotterTimer() {
 	
 	setInterval(dotter, 500);
 	}	
-	
 	
 	var inc=1;
 function dotter() {	
