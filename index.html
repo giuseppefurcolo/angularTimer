@@ -1,113 +1,93 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - 6 hands analog clock 3</title>
+  <title>Angular Timer</title>
   <link rel="stylesheet" href="./style.css">
-
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<body onload="begin()" onresize="size()" >
-
-<div id="container">
-
-	<div id="box8" class="sqare">
-    <div id="box8line1" class="stecca"></div>
-		<div id="box8line2" class="stecca"></div>
-		<div id="box8line3" class="stecca"></div>
-		<div id="box8line4" class="stecca"></div>
-		<div id="box8line5" class="stecca"></div>
-		<div id="box8line6" class="stecca"></div>
-		<div id="box8line7" class="stecca"></div>
-		<div id="box8line8" class="stecca"></div>
-		<div id="box8line9" class="stecca"></div>
-        <div class="zero"></div> 
+<body onload="begin()" onresize="size()">
+  <div id="container">
+    <div id="box8" class="sqare">
+      <div id="box8line1" class="stecca"></div>
+      <div id="box8line2" class="stecca"></div>
+      <div id="box8line3" class="stecca"></div>
+      <div id="box8line4" class="stecca"></div>
+      <div id="box8line5" class="stecca"></div>
+      <div id="box8line6" class="stecca"></div>
+      <div id="box8line7" class="stecca"></div>
+      <div id="box8line8" class="stecca"></div>
+      <div id="box8line9" class="stecca"></div>
+      <div class="zero"></div> 
     </div>
-    
-	<div id="box7" class="sqare">
-    <div id="box7line1" class="stecca"></div>
-		<div id="box7line2" class="stecca"></div>
-		<div id="box7line3" class="stecca"></div>
-		<div id="box7line4" class="stecca"></div>
-		<div id="box7line5" class="stecca"></div>
-		<div id="box7line6" class="stecca"></div>
-		<div id="box7line7" class="stecca"></div>
-		<div id="box7line8" class="stecca"></div>
-		<div id="box7line9" class="stecca"></div>
-        <div class="zero"></div> 
-    
+    <div id="box7" class="sqare">
+      <div id="box7line1" class="stecca"></div>
+      <div id="box7line2" class="stecca"></div>
+      <div id="box7line3" class="stecca"></div>
+      <div id="box7line4" class="stecca"></div>
+      <div id="box7line5" class="stecca"></div>
+      <div id="box7line6" class="stecca"></div>
+      <div id="box7line7" class="stecca"></div>
+      <div id="box7line8" class="stecca"></div>
+      <div id="box7line9" class="stecca"></div>
+      <div class="zero"></div> 
     </div>
-
-	<div id="box6" class="dots">
-		<div id="dot3" class="pointtop"></div>  
-		<div id="dot4" class="pointdown"></div>
-	</div>
-
-	<div id="box5" class="sqare">
-		<div id="box5line1" class="stecca"></div>
-		<div id="box5line2" class="stecca"></div>
-		<div id="box5line3" class="stecca"></div>
-		<div id="box5line4" class="stecca"></div>
-		<div id="box5line5" class="stecca"></div>
-		<div id="box5line6" class="stecca"></div>
-		<div id="box5line7" class="stecca"></div>
-		<div id="box5line8" class="stecca"></div>
-		<div id="box5line9" class="stecca"></div>
-        <div class="zero"></div> 
-	</div>
-
-	<div id="box4" class="sqare">
-    	<div id="box4line1" class="stecca"></div>
-		<div id="box4line2" class="stecca"></div>
-		<div id="box4line3" class="stecca"></div>
-		<div id="box4line4" class="stecca"></div>
-		<div id="box4line5" class="stecca"></div>
-		<div id="box4line6" class="stecca"></div>
-		<div id="box4line7" class="stecca"></div>
-		<div id="box4line8" class="stecca"></div>
-		<div id="box4line9" class="stecca"></div>
-        <div class="zero"></div> 
+    <div id="box6" class="dots">
+      <div id="dot3" class="pointtop"></div>  
+      <div id="dot4" class="pointdown"></div>
     </div>
-	
+    <div id="box5" class="sqare">
+      <div id="box5line1" class="stecca"></div>
+      <div id="box5line2" class="stecca"></div>
+      <div id="box5line3" class="stecca"></div>
+      <div id="box5line4" class="stecca"></div>
+      <div id="box5line5" class="stecca"></div>
+      <div id="box5line6" class="stecca"></div>
+      <div id="box5line7" class="stecca"></div>
+      <div id="box5line8" class="stecca"></div>
+      <div id="box5line9" class="stecca"></div>
+      <div class="zero"></div> 
+    </div>
+    <div id="box4" class="sqare">
+      <div id="box4line1" class="stecca"></div>
+      <div id="box4line2" class="stecca"></div>
+      <div id="box4line3" class="stecca"></div>
+      <div id="box4line4" class="stecca"></div>
+      <div id="box4line5" class="stecca"></div>
+      <div id="box4line6" class="stecca"></div>
+      <div id="box4line7" class="stecca"></div>
+      <div id="box4line8" class="stecca"></div>
+      <div id="box4line9" class="stecca"></div>
+      <div class="zero"></div> 
+    </div>
     <div id="box3" class="dots">
-    	<div id="dot1" class="pointtop"></div>  
-		<div id="dot2" class="pointdown"></div>  
+      <div id="dot1" class="pointtop"></div>  
+      <div id="dot2" class="pointdown"></div>  
     </div>
-	
     <div id="box2" class="sqare">
-        <div id="box2line1" class="stecca"></div>
-		<div id="box2line2" class="stecca"></div>
-		<div id="box2line3" class="stecca"></div>
-		<div id="box2line4" class="stecca"></div>
-		<div id="box2line5" class="stecca"></div>
-		<div id="box2line6" class="stecca"></div>
-		<div id="box2line7" class="stecca"></div>
-		<div id="box2line8" class="stecca"></div>
-		<div id="box2line9" class="stecca"></div>
-        <div class="zero"></div> 
+      <div id="box2line1" class="stecca"></div>
+      <div id="box2line2" class="stecca"></div>
+      <div id="box2line3" class="stecca"></div>
+      <div id="box2line4" class="stecca"></div>
+      <div id="box2line5" class="stecca"></div>
+      <div id="box2line6" class="stecca"></div>
+      <div id="box2line7" class="stecca"></div>
+      <div id="box2line8" class="stecca"></div>
+      <div id="box2line9" class="stecca"></div>
+      <div class="zero"></div> 
     </div>
-
-	<div id="box1" class="sqare">
-    <div id="box1line1" class="stecca"></div>
-		<div id="box1line2" class="stecca"></div>
-		<div id="box1line3" class="stecca"></div>
-		<div id="box1line4" class="stecca"></div>
-		<div id="box1line5" class="stecca"></div>
-		<div id="box1line6" class="stecca"></div>
-		<div id="box1line7" class="stecca"></div>
-		<div id="box1line8" class="stecca"></div>
-		<div id="box1line9" class="stecca"></div>
-		<div class="zero"></div>  
+    <div id="box1" class="sqare">
+      <div id="box1line1" class="stecca"></div>
+      <div id="box1line2" class="stecca"></div>
+      <div id="box1line3" class="stecca"></div>
+      <div id="box1line4" class="stecca"></div>
+      <div id="box1line5" class="stecca"></div>
+      <div id="box1line6" class="stecca"></div>
+      <div id="box1line7" class="stecca"></div>
+      <div id="box1line8" class="stecca"></div>
+      <div id="box1line9" class="stecca"></div>
+      <div class="zero"></div>  
     </div>
-
-
-
-</div>
-
-</body>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>
